@@ -28,18 +28,23 @@ const Navbar = () => {
                             <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
                         </DisclosureButton>
                     </div>
-                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div className="flex flex-1 items-center justify-center sm:items-stretch">
+                        {/* <div className="self-center bg-orange-800">
+                            <div className="text-white font-sans sans-serif font-medium">
+                                My Portfolio
+                            </div>
+                        </div> */}
                         {/* LOGO */}
-                        <div className="flex flex-shrink-0 items-center">
+                        {/* <div className="flex flex-shrink-0 items-center">
                             <img
                                 alt="Your Company"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                 className="h-8 w-auto"
                             />
-                        </div>
+                        </div> */}
                         {/* PG IN NAVBAR */}
                         <div className="hidden sm:ml-6 sm:block">
-                            <div className="flex space-x-4">
+                            <div className="flex space-x-5 font-sans sans-serif">
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
@@ -47,9 +52,9 @@ const Navbar = () => {
                                         aria-current={item.current ? 'page' : undefined}
                                         className={classNames(
                                             item.current ?
-                                                'bg-gray-900 text-white'
+                                                'bg-gray-900 text-white font-semibold'
                                             :
-                                                'text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium'
+                                                'text-white hover:bg-gray-700', 'rounded-md px-3 py-2 text-lg font-medium'
                                         )}
                                     >
                                         {item.name}
