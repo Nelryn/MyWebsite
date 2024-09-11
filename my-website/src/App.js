@@ -1,8 +1,9 @@
-import './App.css';
-
-import React from "react";
-import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+
+import './App.css';
+import Navbar from "./components/Navbar/navbar";
+import Footer from './components/Footer/footer';
 
 import Home from "./pages";
 import Profile from "./pages/profile";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }

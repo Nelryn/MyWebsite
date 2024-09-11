@@ -29,7 +29,7 @@ const Navbar = () => {
                         </DisclosureButton>
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch">
-                        {/* <div className="self-center bg-orange-800">
+                        {/* <div className="self-center">
                             <div className="text-white font-sans sans-serif font-medium">
                                 My Portfolio
                             </div>
