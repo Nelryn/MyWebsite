@@ -12,6 +12,9 @@ module.exports = {
       },
       boxShadow: {
         'basic': '0 4px 4px 0px rgba(0,0,0,0.3)',
+      },
+      fontFamily: {
+        'idea': ['Cormorant Infant'],
       }
     },
   },

@@ -4,10 +4,11 @@ import { SiLinkedin } from "react-icons/si";
 
 import "./index.css";
 import pfp from "../assets/jojolions.png";
+import Ideabar from "../components/IdeaBar/ideabar";
 
 const Home = () => {
     return (
-        <div className="bg-baby-blue">
+        <div>
             <div className="py-5 flex place-content-center">
                 <div className="bg-[#AAB9CF] w-1/2 h-fit rounded-md shadow-basic py-10 grid gap-3 justify-items-center">
                     <div className="flex">
@@ -26,21 +27,22 @@ const Home = () => {
                         I like programming and trying out new things. I'm curious, dedicated and organized and these helped me to stay motivated throughout the years.
                         Enjoy your stay here !~
                     </div>
-                    <div className="flex">
-                        <div className="flex bg-white w-7 h-7 place-content-center place-items-center rounded-md">
+                    <div className="flex gap-3">
+                        <a href="https://github.com/Nelryn" className="flex bg-white w-8 h-8 place-content-center place-items-center rounded-md">
                             <VscGithubInverted className="w-6 h-6"/>
-                        </div>
-                        <div>
-                            <SiLinkedin />
-                        </div>
+                        </a>
+                        <a href="https://linkedin.com/in/emilie-baunifais" className="flex bg-white w-8 h-8 place-content-center place-items-center rounded-md">
+                            <SiLinkedin className="w-5 h-5"/>
+                        </a>
                     </div>
                 </div>
             </div>
             <div>
-                <h1 className="text-3xl font-bold underline">
-                    Welcome to my Website !
+                <h1 className="font-sans sans-serif text-3xl font-bold">
+                    Projects Highlight !
                 </h1>
             </div>
+            <Ideabar />
         </div>
     )
 }
