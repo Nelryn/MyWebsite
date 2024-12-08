@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Ideabar = () => {
     return (
-        <div className="flex border-y border-black my-6 py-10 place-content-around place-items-center">
+        <div className="flex border-y border-black mb-6 py-10 place-content-around place-items-center">
             <div>
                 <div className="font-idea text-6xl">
                     Got a project idea ?
